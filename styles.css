@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0d0d1a;
+  color: #e0e0eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #00e6e6;
+}
+
+p {
+  font-size: 1em;
+  color: #a6a6a6;
+}
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app-card {
+  background: #1a1a2e;
+  border: 2px solid #00e6e6;
+  border-radius: 10px;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.app-card:hover {
+  transform: scale(1.05);
+}
+
+.app-card h2 {
+  font-size: 1.5em;
+  color: #00e6e6;
+}
+
+.app-card p {
+  font-size: 1em;
+  margin: 10px 0;
+  color: #bfbfbf;
+}
+
+.video-preview {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  scroll-snap-align: center;
+  border-radius: 8px;
+  border: 1px solid #00e6e6;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #1a1a2e;
+  background-color: #00e6e6;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #009999;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #a6a6a6;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
